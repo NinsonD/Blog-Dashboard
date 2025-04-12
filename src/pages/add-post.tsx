@@ -45,8 +45,7 @@ const AddPostPage = () => {
       setSnackbarType("success");
       setShowSnackbar(true);
       setTimeout(() => router.push("/posts"), 1000);
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (error) {
+    } catch {
       setSnackbarType("error");
       setShowSnackbar(true);
     }
