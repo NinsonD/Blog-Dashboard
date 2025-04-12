@@ -45,7 +45,7 @@ const AddPostPage = () => {
       setSnackbarType("success");
       setShowSnackbar(true);
       setTimeout(() => router.push("/posts"), 1000);
-    } catch (error) {
+    } catch {
       setSnackbarType("error");
       setShowSnackbar(true);
     }
