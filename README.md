@@ -15,6 +15,7 @@ cd urbio-blog-dashboard
 ```
 
 2. Install dependencies
+   <<<<<<< HEAD
    npm install
 
 3. Run the development server
@@ -30,7 +31,30 @@ TypeScript to catch bugs early and ensure scalable, typed components
 
 Material-UI v7 for a sleek, responsive UI out of the box
 
-Redux Toolkit Query for API data fetching and smart caching
+=======
+
+```bash
+   npm install
+```
+
+3. Run the development server
+
+```bash
+   npm run dev
+```
+
+4. Open your browser and navigate to [http://localhost:3000]
+
+🧠 Design Decisions
+🔹 Tech Stack Choices
+Next.js for routing and performance
+
+TypeScript to catch bugs early and ensure scalable, typed components
+
+Material-UI v7 for a sleek, responsive UI out of the box
+
+> > > > > > > 5f71489 (📝 Update README with project summary and deploy instructions)
+> > > > > > > Redux Toolkit Query for API data fetching and smart caching
 
 🔹 State Management
 All API logic and caching are handled via RTK Query
@@ -87,10 +111,17 @@ JSONPlaceholder API
 
 📦 Deployment
 You can deploy this project easily using Vercel:
+<<<<<<< HEAD
 npx vercel
+=======
+
+```bash
+npx vercel
+```
 
 💬 Author
 Built by Ninson D
 Open to feedback, improvements, and full-stack extensions of this project!
 
 ---
+"# Blog-Dashboard" 
