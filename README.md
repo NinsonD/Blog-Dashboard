@@ -14,89 +14,73 @@ git clone https://github.com/NinsonD/urbio-blog-dashboard.git
 cd urbio-blog-dashboard
 ```
 
-2. Install dependencies
-   <<<<<<< HEAD
-   npm install
+### 2. Install dependencies
 
-3. Run the development server
-   npm run dev
+npm install
+
+### 3. Start the development server
+
+npm run dev
+
+### 4. Open the app in your browser
 
 App will start on: http://localhost:3000
 
 🧠 Design Decisions
 🔹 Tech Stack Choices
-Next.js for routing and performance
+Next.js – for optimized routing, performance, and developer experience
 
-TypeScript to catch bugs early and ensure scalable, typed components
+TypeScript – for robust type safety and scalable code
 
-Material-UI v7 for a sleek, responsive UI out of the box
+Material-UI v7 – for a polished, responsive UI with minimal effort
 
-=======
-
-```bash
-   npm install
-```
-
-3. Run the development server
-
-```bash
-   npm run dev
-```
-
-4. Open your browser and navigate to [http://localhost:3000]
-
-🧠 Design Decisions
-🔹 Tech Stack Choices
-Next.js for routing and performance
-
-TypeScript to catch bugs early and ensure scalable, typed components
-
-Material-UI v7 for a sleek, responsive UI out of the box
-
-> > > > > > > 5f71489 (📝 Update README with project summary and deploy instructions)
-> > > > > > > Redux Toolkit Query for API data fetching and smart caching
+Redux Toolkit Query – for efficient API management and caching
 
 🔹 State Management
-All API logic and caching are handled via RTK Query
+API logic and caching handled via RTK Query
 
-Added local cache updates after post creation using updateQueryData
+Implemented local cache update on post creation (updateQueryData)
 
-Avoided unnecessary refetching by syncing state manually when needed
+Avoided unnecessary refetching by syncing state manually
 
-🔹 Responsiveness & UI
-Used Grid2 from MUI v7 to handle responsive layouts across breakpoints
+🔹 UI & Responsiveness
+Used Grid2 from MUI v7 for responsive layout handling
 
-Built reusable layout components: Header, Sidebar, and Layout
+Built reusable layout components: Header, Sidebar, Layout
 
-Included pagination for better UX when browsing blog posts
+Pagination for better UX when browsing blog posts
+
+Dark/Light theme toggle for accessibility
 
 ⚠️ Challenges Faced
+Mock API Limitations
 
-1. Mock API Limitations
-   JSONPlaceholder doesn't actually persist new posts, which meant added posts weren't returned on subsequent API calls
+JSONPlaceholder doesn't persist new posts
 
-Solved this by injecting new posts directly into RTK Query cache to reflect them immediately in the UI
+Solution: Inject new posts into RTK Query cache
 
-2. Grid Migration (MUI v7)
-   MUI removed item, xs, sm, md props from <Grid>, which broke layout initially
+Grid Migration (MUI v7)
 
-Resolved by switching to Unstable_Grid2 and rewriting layout for full MUI v7 compatibility
+Grid props like item, xs, md deprecated
 
-3. Detail View for Newly Added Posts
-   Since JSONPlaceholder only supports /posts/:id for existing (static) posts, newly added ones would 404
+Fixed by using Unstable_Grid2 and updating layout
 
-Fixed by resolving post data from local cache instead of hitting the API
+Newly Added Post Detail View
+
+JSONPlaceholder /posts/:id fails for new posts
+
+Solution: Fallback to local cache for post lookup
 
 ✅ Features
-List all blog posts with pagination
+List blog posts with pagination
 
 Add new posts with form validation
 
-View single post in detail
+View individual post details
 
-Responsive layout with dark/light theme support
+Responsive layout with dark/light theme
 
-Toast/snackbar feedback for user actions
+Toast notifications for user actions
 
 🛠️ Technologies Used
 Next.js
@@ -110,18 +94,10 @@ Material-UI v7
 JSONPlaceholder API
 
 📦 Deployment
-You can deploy this project easily using Vercel:
-<<<<<<< HEAD
+Project can be deployed using Vercel:
 npx vercel
-=======
-
-```bash
-npx vercel
-```
+🔗 Live Demo: https://blog-dashboard.vercel.app
 
 💬 Author
 Built by Ninson D
-Open to feedback, improvements, and full-stack extensions of this project!
-
----
-"# Blog-Dashboard" 
+Open to feedback, improvements, and full-stack collaborations!
