@@ -1,40 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+🚀 Urbio Blog Dashboard – Full-Stack Frontend Project Summary
+Designed and developed a fully responsive blog dashboard for Urbio Technologies using Next.js, TypeScript, Material-UI, and Redux Toolkit Query (RTK Query). The project replicates a real-world admin panel for managing blog posts with a modern and scalable frontend architecture.
 
-## Getting Started
+💡 Key Features:
+⚛️ Next.js + TypeScript for fast and type-safe development
 
-First, run the development server:
+🎨 Material-UI v7 with a custom themed dark/light mode
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+⚙️ Redux Toolkit Query for blazing-fast API integration and smart caching
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔁 Pagination via query params with smooth client-side transitions
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+✍️ Add new posts with form validation and real-time UI updates using local cache sync
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+📱 Fully responsive layout optimized for mobile, tablet, and desktop
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+🔄 Post detail page supports both API-fetched and local posts
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✨ Clean UI, reusable components, and polished user experience
 
-## Learn More
+✅ Bonus Points Achieved:
+Manual cache updates via updateQueryData for instant UX feedback
 
-To learn more about Next.js, take a look at the following resources:
+Conditional rendering and error/loading states for robustness
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Smart navigation with sidebar routing and route-based layouts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Tech Stack: Next.js, TypeScript, Redux Toolkit, RTK Query, Material-UI, React, JSONPlaceholder API
+"# Blog-Dashboard" 
