@@ -14,7 +14,7 @@ const PostDetailPage = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data: posts, isLoading, isError } = useGetPostsQuery(1);
+  const { data: posts, isLoading, isError } = useGetPostsQuery();
 
   if (isLoading) {
     return (

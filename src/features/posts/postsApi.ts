@@ -33,7 +33,7 @@ export const postsApi = createApi({
 
           // Update the cache for page 1
           dispatch(
-            postsApi.util.updateQueryData("getPosts", 1, (draft) => {
+            postsApi.util.updateQueryData("getPosts", undefined, (draft) => {
               draft.unshift({
                 ...data,
                 id: new Date().getTime(), // Mock unique ID

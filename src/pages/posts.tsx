@@ -7,7 +7,7 @@ import { useGetPostsQuery } from "../features/posts/postsApi";
 
 const PostsPage = () => {
   const [page, setPage] = useState(1);
-  const { data: posts, error, isLoading, isFetching } = useGetPostsQuery(page);
+  const { data: posts, error, isLoading, isFetching } = useGetPostsQuery();
 
   const handleNext = () => setPage((prev) => prev + 1);
   const handlePrev = () => setPage((prev) => Math.max(prev - 1, 1));
