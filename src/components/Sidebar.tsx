@@ -1,5 +1,5 @@
 import { Drawer, List, ListItem, ListItemText, Toolbar } from "@mui/material";
-import Link from "next/link";
+import NextLink from "next/link";
 
 const drawerWidth = 240;
 
@@ -18,20 +18,26 @@ const Sidebar = () => {
     >
       <Toolbar />
       <List>
-        <ListItem button component={Link} href="/">
-          <ListItemText primary="Dashboard" />
-        </ListItem>
-        <ListItem button component={Link} href="/posts">
-          <ListItemText primary="Posts" />
-        </ListItem>
-        <ListItem button component={Link} href="/add-post">
-          <ListItemText primary="Add Post" />
-        </ListItem>
+        <NextLink href="/" passHref legacyBehavior>
+          <ListItem button component="a">
+            <ListItemText primary="Dashboard" />
+          </ListItem>
+        </NextLink>
+        <NextLink href="/posts" passHref legacyBehavior>
+          <ListItem button component="a">
+            <ListItemText primary="Posts" />
+          </ListItem>
+        </NextLink>
+        <NextLink href="/add-post" passHref legacyBehavior>
+          <ListItem button component="a">
+            <ListItemText primary="Add Post" />
+          </ListItem>
+        </NextLink>
       </List>
     </Drawer>
   );
 };
 
 export default Sidebar;
-// This component represents the sidebar of the application.
-// It uses Material-UI's Drawer component to create a permanent sidebar with navigation links to different pages.
+// // This component represents the sidebar of the blog dashboard.
+// // It contains links to different sections of the application, such as Dashboard, Posts, and Add Post.
